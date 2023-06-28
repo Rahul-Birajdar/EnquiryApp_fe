@@ -22,7 +22,7 @@ return errors;
 
 const onSubmit=(values,{resetForm})=>{
 let data={"name":values.name,"phone":values.phone,"query":values.query};
-let urladd="enquiryapp-f4a5qq0c0-rahul-birajdar.vercel.app/save";
+let urladd="https://enquiryapp-f4a5qq0c0-rahul-birajdar.vercel.app/save";
 axios.post(urladd,data)
 .then(res=>{
 alert("We will get back to you");
